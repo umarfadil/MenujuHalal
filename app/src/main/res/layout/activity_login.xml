@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_wedding"
+    android:padding="@dimen/padding_32"
+    tools:context="dev.nullpointer.menujuhalal.LoginActivity">
+
+    <ImageView
+        android:contentDescription="@string/app_name"
+        android:layout_width="187dp"
+        android:layout_height="187dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/padding_32"
+        android:src="@drawable/weddings" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/padding_32"
+        android:background="@drawable/button"
+        android:text="@string/login"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/padding_32"
+        android:background="@drawable/form"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:drawablePadding="@dimen/padding_8"
+        android:drawableTint="@color/colorPrimaryDark"
+        android:padding="@dimen/padding_8"
+        android:hint="@string/password"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/padding_16"
+        android:background="@drawable/form"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:drawablePadding="@dimen/padding_8"
+        android:drawableTint="@color/colorPrimaryDark"
+        android:padding="@dimen/padding_8"
+        android:hint="@string/username"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textColor="@color/colorPrimaryDark" />
+
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dev.nullpointer.menujuhalal">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!--<meta-data-->
+            <!--android:name="com.google.android.geo.API_KEY"-->
+            <!--android:value="AIzaSyCnl6hO_S3aUNYfE1p-uK_DhGb_zvSK7nQ" />-->
+
+         <meta-data
+         android:name="com.google.android.geo.API_KEY"
+         android:value="AIzaSyBfaU_nvYFeXhG-OZk4AKHIpdMQPLx4uJg" />
+
+        <activity
+            android:name=".GettingStartedActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="Login" />
+        <activity
+            android:name=".DashboardActivity"
+            android:label="Dashboard" />
+        <activity
+            android:name=".QRcodeActivity"
+            android:label="QR Code"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".CalendarActivity"
+            android:label="Save the Date"
+            android:parentActivityName=".DashboardActivity" />
+        <activity android:name=".TimelineActivity"
+            android:label="Save the Date"
+            android:parentActivityName=".DashboardActivity" />
+    </application>
+
+</manifest>
